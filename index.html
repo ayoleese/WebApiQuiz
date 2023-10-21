@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Assets/style.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <header>
+        <nav><a href="views">View Score</a></nav>
+        <div id="time"></div>
+    </header>
+    <div class="quiz">
+        <h1 id="name">Web Coding Quiz</h1>
+        <div id="questions"></div>
+        <br>
+        <div id="choices">
+            <label><input type="choice" name="answer" value="A"></label>
+            <label><input type="choice" name="answer" value="B"></label>
+            <label><input type="choice" name="answer" value="C"></label>
+            <label><input type="choice" name="answer" value="D"></label>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center";>
+        <button class="start" id="begin">Start</button>
+    </div>
+    <div class="hide" id="result"></div>
+    <script src="./Assets/script.js"></script>
+</body>
+</html>

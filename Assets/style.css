@@ -1,0 +1,54 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav a:hover {
+    color: red;
+}
+
+
+h1 {
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+ 
+
+.quiz {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 300px 0;
+    height: 237px;
+    border: 2px dashed black;
+}
+
+#questions {
+    display: contents;
+     display: none;
+}
+
+#choices {
+    display: flex;
+    display: none;
+    flex-direction: column;
+
+}
+
+.hide {
+    display: none;
+}
+
+#results {
+    display: none;
+}
+
+
