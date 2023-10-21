@@ -50,7 +50,7 @@ startBtn.addEventListener("click", function() {
         choicesContainer.innerHTML = "";
     
         questionData.choices.forEach((choice, index) => {
-          const choiceElement = document.createElement("label");
+          const choices = document.getElementById("choices");
           choiceElement.innerHTML = `
             <input type="radio" name="answer" value="${choice}">
             ${choice}
@@ -61,25 +61,25 @@ startBtn.addEventListener("click", function() {
           choicesContainer.appendChild(choiceElement);
         });
       } else {
-        // Quiz is complete, display the result
+
         displayResult();
       }
     }
     
-    function checkAnswer(selectedChoice, correctAnswer) {
-      if (selectedChoice === correctAnswer) {
-        score++;
-      }
+  //   function checkAnswer(selectedChoice, correctAnswer) {
+  //     if (selectedChoice === correctAnswer) {
+  //       score++;
+  //     }
     
-      currentQuestion++;
-      displayQuestion(currentQuestion);
-    }
+  //     currentQuestion++;
+  //     displayQuestion(currentQuestion);
+  //   }
     
-    function displayResult() {
-      questEl.style.display = "none";
-      results.style.display = "block";
-      results.innerHTML = `You scored ${score} out of ${questions.length} questions.`;
-    }
+  //   function displayResult() {
+  //     questEl.style.display = "none";
+  //     results.style.display = "block";
+  //     results.innerHTML = `You scored ${score} out of ${questions.length} questions.`;
+  //   }
     
 
   
