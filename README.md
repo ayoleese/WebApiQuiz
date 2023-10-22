@@ -11,7 +11,6 @@
 * It is done when the quiz provide true and false when you select an answer
 
 
+![photo of page](<Screenshot 2023-10-22 at 4.36.47 AM.png>)
 
-
-![photo of page](<Screenshot 2023-10-21 at 6.42.37 PM.png>)
-![photo of questions](<Screenshot 2023-10-21 at 6.42.44 PM.png>)
+![photo of questions](<Screenshot 2023-10-22 at 4.36.54 AM.png>)
