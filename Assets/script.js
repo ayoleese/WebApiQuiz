@@ -39,6 +39,7 @@ let score = 0;
 startBtn.addEventListener("click", function() {
       nameEl.style.display = "none";
       questEl.style.display = "block";
+      questEl.style.alignSelf = "center";
       choices.style.display = "flex";
       displayQuestion(currentQuestion);
 
@@ -47,42 +48,44 @@ startBtn.addEventListener("click", function() {
       if (questionIndex < questions.length) {
         const questionData = questions[questionIndex];
         questEl.innerHTML = `<p>${questionData.question}</p>`;
-        choicesContainer.innerHTML = "";
     
-        questionData.choices.forEach((choice, index) => {
-          const choices = document.getElementById("choices");
-          choiceElement.innerHTML = `
-            <input type="radio" name="answer" value="${choice}">
-            ${choice}
-          `;
-          choiceElement.addEventListener("click", function() {
-            checkAnswer(choice, questionData.correctAnswer);
-          });
-          choicesContainer.appendChild(choiceElement);
-        });
-      } else {
 
-        displayResult();
+    //     questionData.choices.forEach((choice, index) => {
+    //       const choiceElement = document.createElement("label");
+    //       choiceElement.innerHTML = `
+    //         <input type="radio" name="answer" value="${choices}">
+    //         ${choices}
+    //       `;
+    //       choicesContainer.appendChild(choices);
+    
+    //       choices.querySelector("input").addEventListener("click", function() {
+    //         checkAnswer(choice, questionData.correctAnswer);
+    //       });
+    //     });
+    //   } else {
+    //     displayResult();
       }
     }
     
-  //   function checkAnswer(selectedChoice, correctAnswer) {
-  //     if (selectedChoice === correctAnswer) {
-  //       score++;
-  //     }
+    // function checkAnswer(selectedChoice, correctAnswer) {
+    //   if (selectedChoice === correctAnswer) {
+    //     score++;
+    //   }
     
-  //     currentQuestion++;
-  //     displayQuestion(currentQuestion);
-  //   }
+    //   currentQuestion++;
+    //   displayQuestion(currentQuestion);
+    // }
     
-  //   function displayResult() {
-  //     questEl.style.display = "none";
-  //     results.style.display = "block";
-  //     results.innerHTML = `You scored ${score} out of ${questions.length} questions.`;
-  //   }
-    
+    // function displayResult() {
+    //   questEl.style.display = "none";
+    //   choicesContainer.style.display = "none";
+    //   results.style.display = "block";
+    //   results.innerHTML = `You scored ${score} out of ${questions.length} questions.`;
+    // }
 
-  
-  
-  
-  console.log(startBtn)
+    
+    
+    
+    
+    
+    

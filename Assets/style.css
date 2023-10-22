@@ -1,5 +1,6 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(129, 132, 129);
 }
 
 header {
@@ -34,12 +35,16 @@ h1 {
 #questions {
     display: contents;
      display: none;
+     margin-top: 2vh;
+     font-weight: bold;
 }
 
 #choices {
     display: flex;
     display: none;
     flex-direction: column;
+    margin-top: 5vh;
+    margin-left: 5vh;
 
 }
 
