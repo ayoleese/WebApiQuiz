@@ -50,13 +50,13 @@ startBtn.addEventListener("click", function() {
         questEl.innerHTML = `<p>${questionData.question}</p>`;
     
 
-    //     questionData.choices.forEach((choice, index) => {
-    //       const choiceElement = document.createElement("label");
-    //       choiceElement.innerHTML = `
-    //         <input type="radio" name="answer" value="${choices}">
-    //         ${choices}
-    //       `;
-    //       choicesContainer.appendChild(choices);
+        // questionData.choices.forEach((choice, index) => {
+        //   const choiceElement = document.createElement("label");
+        //   choiceElement.innerHTML = `
+        //     <input type="radio" name="answer" value="${choices}">
+        //     ${choices}
+        //   `;
+        //   choicesContainer.appendChild(choices);
     
     //       choices.querySelector("input").addEventListener("click", function() {
     //         checkAnswer(choice, questionData.correctAnswer);
